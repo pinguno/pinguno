@@ -1,0 +1,15 @@
+Comandos basicos git
+
+-git clone [] --> Para clonar un repositorio
+-git add [] --> Para añadir un archivo
+-git commit -m "" --> Para añadir el comentario
+-git push --> Para subir a github
+-git pull --> Para actualizar todo de github al equipo
+-git rm --cached [] --> Borrar un archivo
+
+Comanos docker
+-docker-compose stop --> Para parar l contenedor
+-docker-compose up -d --> Para arrancar un contenedor
+
+Comandos Debian
+-sudo chown -R r4f4: [Direccion del la carpeta o directorio]  Cambiar propietario de carpetas o ficheros 
