@@ -1,0 +1,31 @@
+
+
+
+Eclipse intalar
+
+primero me descargo eclipse de la pagina
+
+descomprimo el paquete
+
+abro desde la terminal el instaldor con sudo ./ Instalador
+
+una vez hecho selecciono la carpeta donde queremos instalarlo
+/home/r4f4/jee-2021-12
+
+dejamos que se instale y lo cerramos
+
+vamos a la carpeta local share applications y lo abrimos en la terminal
+
+creamos un archivo con nano y le ponemos el nombre de eclipse desktop
+y pegamos esto:
+
+[Desktop Entry]
+Name=Eclipse IDE
+Comment=Eclipse IDE
+Exec=/home/r4f4/jee-2021-12/eclipse/eclipse
+Icon=/home/r4f4/jee-2021-12/eclipse/icon.xpm
+Type=Application
+StartupNotify=true
+Categories=Utility;Development;IDE;
+
+lo cerramos con Control + X y presionamos S y Enter 
