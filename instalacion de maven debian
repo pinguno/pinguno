@@ -1,0 +1,37 @@
+Para descargar maven en debian
+
+1.- Debemos de buscar el archivo ta.gz en la pagina oficial de maven, copiamos el link y escribimos
+$wget y el link 
+
+2.- Una vez que lo descargamos lo descomprimimos y lo mandamos a la carpeta opt
+$sudo tar xf apache-maven-3.8.5-bin.tar.gz -C /opt
+
+3.- Despues creamos un enlace simbolico 
+$sudo ln -s /opt/apache-maven-3.8.5 /opt/maven
+
+4.- Establecemos la variable de entorno
+$sudo nano /etc/profile.d/maven.sh
+
+5.- La rellenamos
+export JAVA_HOME=/usr/lib/jvm/default-java(Aqui escribimos el java que tengamos)
+ export M2_HOME=/opt/maven
+ export MAVEN_HOME=/opt/maven
+ export PATH=${M2_HOME}/bin:${PATH}
+
+6.- Hacemos que el script sea ejecutable 
+$sudo chmod +x /etc/profile.d/maven.sh
+
+7.- Cargamos las variables del entorno en la sesion actual 
+$source /etc/profile.d/maven.sh
+
+8.- Verificamos el inicio de sesion
+$mvn --version
+
+para arrancar maven debemos de escribir
+$source /etc/profile.d/maven.sh 
+y despues 
+
+mvn -version
+
+sin cerrar el cmd
+
